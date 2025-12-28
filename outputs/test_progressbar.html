@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test: ProgressBar</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #2c3e50; color: white; }
+        
+        .progress-container { width: 300px; height: 8px; background: #34495e; border-radius: 4px; cursor: pointer; }
+        .progress-bar { height: 100%; background: #e74c3c; border-radius: 4px; width: 0%; transition: width 0.1s; }
+        
+    </style>
+</head>
+<body>
+    <h1>Testing: ProgressBar</h1>
+    
+        <div class="progress-container" onclick="seekToPosition(event)">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        
+    
+    <script>
+        
+        function updateProgress(percent) {
+            document.getElementById('progressBar').style.width = Math.min(percent, 100) + '%';
+        }
+        
+        function seekToPosition(event) {
+            const container = event.currentTarget;
+            const rect = container.getBoundingClientRect();
+            const percent = (event.clientX - rect.left) / rect.width * 100;
+            updateProgress(percent);
+        }
+        
+        
+        // Test functions
+        console.log('ProgressBar component loaded');
+    </script>
+</body>
+</html>

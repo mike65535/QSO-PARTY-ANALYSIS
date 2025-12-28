@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test: StatusBar</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #2c3e50; color: white; }
+        
+        .status-bar { display: flex; align-items: center; justify-content: center; gap: 20px; font-size: 16px; }
+        .status-item { padding: 8px 12px; background: #34495e; border-radius: 4px; }
+        
+    </style>
+</head>
+<body>
+    <h1>Testing: StatusBar</h1>
+    
+        <div class="status-bar">
+            <span class="status-item" id="activeStations">Active: 0</span>
+            <span class="status-item" id="totalQSOs">QSOs: 0</span>
+            <span class="status-item" id="currentTime">Time: --:--</span>
+        </div>
+        
+    
+    <script>
+        
+        function updateStatus(active, qsos, time) {
+            document.getElementById('activeStations').textContent = `Active: ${active}`;
+            document.getElementById('totalQSOs').textContent = `QSOs: ${qsos}`;
+            document.getElementById('currentTime').textContent = `Time: ${time}`;
+        }
+        
+        
+        // Test functions
+        console.log('StatusBar component loaded');
+    </script>
+</body>
+</html>

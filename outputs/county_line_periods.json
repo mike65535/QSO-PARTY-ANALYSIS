@@ -1,0 +1,312 @@
+{
+  "AB1BL": [
+    {
+      "start_time": "2025-10-18T17:38:00",
+      "end_time": "2025-10-18T20:33:00",
+      "counties": [
+        "SCU",
+        "TOM"
+      ],
+      "qso_count": 54,
+      "alternations": 38,
+      "start_idx": 0,
+      "end_idx": 53
+    },
+    {
+      "start_time": "2025-10-18T20:43:00",
+      "end_time": "2025-10-18T21:04:00",
+      "counties": [
+        "SEN",
+        "TOM"
+      ],
+      "qso_count": 10,
+      "alternations": 9,
+      "start_idx": 54,
+      "end_idx": 63
+    }
+  ],
+  "K2G": [
+    {
+      "start_time": "2025-10-18T14:12:00",
+      "end_time": "2025-10-18T17:41:00",
+      "counties": [
+        "DEL",
+        "GRE"
+      ],
+      "qso_count": 178,
+      "alternations": 154,
+      "start_idx": 0,
+      "end_idx": 177
+    }
+  ],
+  "K2Q": [
+    {
+      "start_time": "2025-10-18T14:02:00",
+      "end_time": "2025-10-18T14:58:00",
+      "counties": [
+        "NIA",
+        "ORL"
+      ],
+      "qso_count": 156,
+      "alternations": 155,
+      "start_idx": 0,
+      "end_idx": 155
+    },
+    {
+      "start_time": "2025-10-18T15:55:00",
+      "end_time": "2025-10-18T17:31:00",
+      "counties": [
+        "GEN",
+        "MON"
+      ],
+      "qso_count": 175,
+      "alternations": 174,
+      "start_idx": 170,
+      "end_idx": 344
+    },
+    {
+      "start_time": "2025-10-18T18:24:00",
+      "end_time": "2025-10-18T19:11:00",
+      "counties": [
+        "LIV",
+        "ONT"
+      ],
+      "qso_count": 166,
+      "alternations": 164,
+      "start_idx": 345,
+      "end_idx": 510
+    },
+    {
+      "start_time": "2025-10-18T20:05:00",
+      "end_time": "2025-10-18T21:12:00",
+      "counties": [
+        "STE",
+        "YAT"
+      ],
+      "qso_count": 188,
+      "alternations": 185,
+      "start_idx": 511,
+      "end_idx": 698
+    },
+    {
+      "start_time": "2025-10-18T22:54:00",
+      "end_time": "2025-10-19T00:31:00",
+      "counties": [
+        "ALL",
+        "CAT"
+      ],
+      "qso_count": 250,
+      "alternations": 248,
+      "start_idx": 699,
+      "end_idx": 948
+    },
+    {
+      "start_time": "2025-10-19T01:13:00",
+      "end_time": "2025-10-19T01:59:00",
+      "counties": [
+        "ERI",
+        "WYO"
+      ],
+      "qso_count": 88,
+      "alternations": 88,
+      "start_idx": 949,
+      "end_idx": 1036
+    }
+  ],
+  "KQ2R": [
+    {
+      "start_time": "2025-10-18T14:27:00",
+      "end_time": "2025-10-18T16:29:00",
+      "counties": [
+        "BRX",
+        "WES"
+      ],
+      "qso_count": 38,
+      "alternations": 34,
+      "start_idx": 0,
+      "end_idx": 37
+    }
+  ],
+  "KV2X": [
+    {
+      "start_time": "2025-10-18T21:58:00",
+      "end_time": "2025-10-18T22:11:00",
+      "counties": [
+        "MON",
+        "WAY"
+      ],
+      "qso_count": 32,
+      "alternations": 24,
+      "start_idx": 237,
+      "end_idx": 268
+    }
+  ],
+  "N2CU": [
+    {
+      "start_time": "2025-10-18T14:00:00",
+      "end_time": "2025-10-18T14:59:00",
+      "counties": [
+        "CAT",
+        "CHA"
+      ],
+      "qso_count": 200,
+      "alternations": 198,
+      "start_idx": 0,
+      "end_idx": 199
+    },
+    {
+      "start_time": "2025-10-18T15:57:00",
+      "end_time": "2025-10-18T17:10:00",
+      "counties": [
+        "ERI",
+        "WYO"
+      ],
+      "qso_count": 278,
+      "alternations": 276,
+      "start_idx": 200,
+      "end_idx": 477
+    },
+    {
+      "start_time": "2025-10-18T18:06:00",
+      "end_time": "2025-10-18T19:35:00",
+      "counties": [
+        "ALL",
+        "LIV"
+      ],
+      "qso_count": 336,
+      "alternations": 336,
+      "start_idx": 478,
+      "end_idx": 813
+    },
+    {
+      "start_time": "2025-10-18T20:33:00",
+      "end_time": "2025-10-18T21:50:00",
+      "counties": [
+        "ONT",
+        "STE"
+      ],
+      "qso_count": 324,
+      "alternations": 324,
+      "start_idx": 814,
+      "end_idx": 1137
+    },
+    {
+      "start_time": "2025-10-18T23:00:00",
+      "end_time": "2025-10-19T00:07:00",
+      "counties": [
+        "GEN",
+        "MON"
+      ],
+      "qso_count": 296,
+      "alternations": 294,
+      "start_idx": 1138,
+      "end_idx": 1433
+    },
+    {
+      "start_time": "2025-10-19T01:08:00",
+      "end_time": "2025-10-19T01:58:00",
+      "counties": [
+        "NIA",
+        "ORL"
+      ],
+      "qso_count": 162,
+      "alternations": 162,
+      "start_idx": 1434,
+      "end_idx": 1595
+    }
+  ],
+  "N2JJ": [
+    {
+      "start_time": "2025-10-18T14:02:00",
+      "end_time": "2025-10-18T16:13:00",
+      "counties": [
+        "MTG",
+        "SCH"
+      ],
+      "qso_count": 110,
+      "alternations": 100,
+      "start_idx": 0,
+      "end_idx": 109
+    },
+    {
+      "start_time": "2025-10-18T17:38:00",
+      "end_time": "2025-10-18T21:18:00",
+      "counties": [
+        "FUL",
+        "HAM"
+      ],
+      "qso_count": 128,
+      "alternations": 124,
+      "start_idx": 110,
+      "end_idx": 237
+    }
+  ],
+  "N2Y": [
+    {
+      "start_time": "2025-10-18T14:02:00",
+      "end_time": "2025-10-18T20:41:00",
+      "counties": [
+        "ORA",
+        "ROC"
+      ],
+      "qso_count": 1428,
+      "alternations": 1414,
+      "start_idx": 0,
+      "end_idx": 1427
+    },
+    {
+      "start_time": "2025-10-18T21:08:00",
+      "end_time": "2025-10-19T01:59:00",
+      "counties": [
+        "PUT",
+        "WES"
+      ],
+      "qso_count": 1234,
+      "alternations": 1230,
+      "start_idx": 1428,
+      "end_idx": 2661
+    }
+  ],
+  "W1WV": [
+    {
+      "start_time": "2025-10-18T19:03:00",
+      "end_time": "2025-10-18T20:21:00",
+      "counties": [
+        "GRE",
+        "ULS"
+      ],
+      "qso_count": 26,
+      "alternations": 24,
+      "start_idx": 87,
+      "end_idx": 112
+    }
+  ],
+  "W2IG": [
+    {
+      "start_time": "2025-10-18T14:18:00",
+      "end_time": "2025-10-18T20:32:00",
+      "counties": [
+        "PUT",
+        "WES"
+      ],
+      "qso_count": 626,
+      "alternations": 626,
+      "start_idx": 0,
+      "end_idx": 625
+    }
+  ],
+  "W9TCV": [
+    {
+      "start_time": "2025-10-18T21:38:00",
+      "end_time": "2025-10-19T01:22:00",
+      "counties": [
+        "ORA",
+        "ROC"
+      ],
+      "qso_count": 100,
+      "alternations": 100,
+      "start_idx": 0,
+      "end_idx": 99
+    }
+  ]
+}

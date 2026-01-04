@@ -5,7 +5,12 @@ Clean Mobile Animation Generator - uses pre-computed county-line periods
 
 import json
 import sqlite3
+import sys
+import os
 from pathlib import Path
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+from lib.animation_controls import get_controls_html, get_controls_css, get_controls_js
+from lib.animation_legend import get_legend_html, get_legend_css, get_legend_js
 
 def generate_mobile_animation():
     """Generate mobile animation HTML using pre-computed periods"""

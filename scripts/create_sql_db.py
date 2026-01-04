@@ -152,6 +152,8 @@ class NYQPDatabaseCreator:
                     
                     if key == 'category':
                         metadata['category'] = value
+                    elif key == 'hq-category':
+                        metadata['hq_category'] = value
                     elif key == 'category-operator':
                         metadata['operator_category'] = value
                     elif key == 'category-station':
@@ -203,13 +205,76 @@ class NYQPDatabaseCreator:
             'rx_county': parts[10]
         }
         
+    def create_mobiles_db(self):
+        """Create database for NY mobile stations."""
+        db_path = self.output_dir / 'ny_mobiles.db'
+        if db_path.exists():
+            db_path.unlink()
+            
+        conn = sqlite3.connect(db_path)
+        
+        conn.execute('''
+            CREATE TABLE IF NOT EXISTS mobile_stations (
+                callsign TEXT PRIMARY KEY,
+                counties TEXT,
+                qso_count INTEGER,
+                county_count INTEGER
+            )
+        ''')
+        
+        # NY county codes
+        ny_counties = {
+            'ALB', 'ALL', 'BRM', 'BRX', 'CAT', 'CAY', 'CHA', 'CHE', 'CLI', 'COL', 'COR', 'DEL', 'DUT', 'ERI', 'ESS', 
+            'FRA', 'FUL', 'GEN', 'GRE', 'HAM', 'HER', 'JEF', 'LEW', 'LIV', 'MAD', 'MON', 'MTG', 'NAS', 'NIA', 'ONE', 
+            'ONO', 'ONT', 'ORA', 'ORL', 'OSW', 'OTS', 'PUT', 'REN', 'SAR', 'SCH', 'SCO', 'SCU', 'SEN', 'STE', 'STL', 
+            'SUF', 'SUL', 'TIO', 'TOM', 'ULS', 'WAS', 'WAY', 'WES', 'WYO', 'YAT'
+        }
+        
+        for log_file in self.logs_dir.glob('*.log'):
+            metadata = self.parse_metadata(log_file)
+            
+            # Check if HQ-CATEGORY contains "Mobile"
+            hq_category = metadata.get('hq_category', '')
+            if 'Mobile' not in hq_category:
+                continue
+                
+            # Extract counties from QSOs
+            counties = set()
+            qso_count = 0
+            
+            with open(log_file, 'r', encoding='utf-8', errors='ignore') as f:
+                for line in f:
+                    if line.startswith('QSO:'):
+                        qso = self.parse_qso_line(line)
+                        if qso and qso['tx_county'] in ny_counties:
+                            counties.add(qso['tx_county'])
+                            qso_count += 1
+            
+            # Only include if operating from NY counties
+            if counties:
+                callsign = metadata.get('callsign', log_file.stem.upper())
+                conn.execute('''
+                    INSERT INTO mobile_stations VALUES (?, ?, ?, ?)
+                ''', (
+                    callsign,
+                    ','.join(sorted(counties)),
+                    qso_count,
+                    len(counties)
+                ))
+        
+        conn.commit()
+        conn.close()
+        print(f"Created {db_path}")
+        
     def create_databases(self):
-        """Create both databases."""
+        """Create all three databases."""
         self.output_dir.mkdir(exist_ok=True)
         print("Creating metadata database...")
         self.create_meta_db()
         print("Creating QSO database...")
         self.create_qso_db()
+        print("Creating NY mobiles database...")
+        self.create_mobiles_db()
         print("Done!")
 
 if __name__ == '__main__':

@@ -5,7 +5,12 @@ All QSO Animation Generator - shows county activity for all stations
 
 import json
 import sqlite3
+import sys
+import os
 from pathlib import Path
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+from lib.animation_controls import get_controls_html, get_controls_css, get_controls_js
+from lib.animation_legend import get_legend_html, get_legend_css, get_legend_js
 
 def generate_all_qso_animation():
     """Generate animation showing all QSO activity by county"""
@@ -109,14 +114,8 @@ def generate_all_qso_animation():
         .control-btn:hover {{ background: #2980b9; }}
         .control-btn:disabled {{ background: #7f8c8d; cursor: not-allowed; }}
         
-        .control-panel {{ position: fixed; bottom: 0; left: 0; right: 0; background: #2c3e50; padding: 10px; z-index: 1000; }}
-        .top-controls {{ display: flex; justify-content: center; gap: 10px; margin-bottom: 8px; }}
-        .middle-row {{ display: flex; align-items: center; margin-bottom: 8px; }}
-        .time-info {{ width: 10%; color: white; font-weight: bold; display: flex; gap: 5px; }}
-        .progress-section {{ width: 85%; margin-left: 2%; }}
-        .progress-container {{ width: 100%; height: 8px; background: #34495e; border-radius: 4px; cursor: pointer; }}
-        .progress-bar {{ height: 100%; background: #e74c3c; border-radius: 4px; width: 0%; transition: width 0.1s; }}
-        .bottom-info {{ text-align: center; color: white; font-size: 12px; }}
+        {get_controls_css()}
+        {get_legend_css()}
     </style>
 </head>
 <body>
@@ -130,26 +129,9 @@ def generate_all_qso_animation():
         </div>
     </div>
     
-    <div class="control-panel">
-        <div class="top-controls">
-            <button class="control-btn" id="playBtn" onclick="togglePlay()">▶ Play</button>
-            <button class="control-btn" id="resetBtn" onclick="resetAnimation()">⏮ Reset</button>
-            <button class="control-btn" id="speedBtn" onclick="cycleSpeed()">Speed 1x</button>
-        </div>
-        <div class="middle-row">
-            <div class="time-info">
-                <span id="dateDisplay">2025-10-18</span> <span id="timeDisplay">14:00Z</span>
-            </div>
-            <div class="progress-section">
-                <div class="progress-container" onclick="seekToPosition(event)">
-                    <div class="progress-bar" id="progressBar"></div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom-info">
-            <span id="statusDisplay">NYQP 2025 All Station Activity | QSOs: 0 | Active Counties: 0</span>
-        </div>
-    </div>
+    {get_controls_html()}
+    
+    {get_legend_html()}
 
     <script>
         // Data

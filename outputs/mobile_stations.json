@@ -1,0 +1,189 @@
+{
+  "AB1BL": {
+    "callsign": "AB1BL",
+    "total_qsos": 37,
+    "counties": [
+      "SEN",
+      "TOM"
+    ],
+    "first_qso": "2025-10-18 17:38:00",
+    "last_qso": "2025-10-18 21:04:00",
+    "icon": "\ud83d\ude8c",
+    "is_active": true
+  },
+  "K2A": {
+    "callsign": "K2A",
+    "total_qsos": 1242,
+    "counties": [
+      "CHE",
+      "COL",
+      "COR",
+      "DEL",
+      "DUT",
+      "HER",
+      "MAD",
+      "ONE",
+      "ONO",
+      "ORA",
+      "OTS",
+      "REN",
+      "SCH",
+      "SCO",
+      "SUL",
+      "TIO",
+      "TOM",
+      "ULS",
+      "WAS"
+    ],
+    "first_qso": "2025-10-18 14:11:00",
+    "last_qso": "2025-10-19 01:39:00",
+    "icon": "\ud83d\ude99",
+    "is_active": true
+  },
+  "K2Q": {
+    "callsign": "K2Q",
+    "total_qsos": 860,
+    "counties": [
+      "ALL",
+      "CAT",
+      "ERI",
+      "GEN",
+      "LIV",
+      "MON",
+      "NIA",
+      "ORL",
+      "WYO",
+      "YAT"
+    ],
+    "first_qso": "2025-10-18 14:02:00",
+    "last_qso": "2025-10-19 01:59:00",
+    "icon": "\ud83d\ude93",
+    "is_active": true
+  },
+  "K2V": {
+    "callsign": "K2V",
+    "total_qsos": 652,
+    "counties": [
+      "CAY",
+      "JEF",
+      "LEW",
+      "MAD",
+      "ONE",
+      "ONO",
+      "OSW",
+      "SEN",
+      "STL",
+      "YAT"
+    ],
+    "first_qso": "2025-10-18 14:01:00",
+    "last_qso": "2025-10-19 01:53:00",
+    "icon": "\ud83d\ude95",
+    "is_active": true
+  },
+  "KQ2R": {
+    "callsign": "KQ2R",
+    "total_qsos": 76,
+    "counties": [
+      "COL",
+      "DUT",
+      "PUT",
+      "WES"
+    ],
+    "first_qso": "2025-10-18 14:27:00",
+    "last_qso": "2025-10-18 22:34:00",
+    "icon": "\ud83c\udfce\ufe0f",
+    "is_active": true
+  },
+  "KV2X": {
+    "callsign": "KV2X",
+    "total_qsos": 269,
+    "counties": [
+      "CAY",
+      "MAD",
+      "MON",
+      "ONE",
+      "ONO",
+      "SEN",
+      "WAY"
+    ],
+    "first_qso": "2025-10-18 14:53:00",
+    "last_qso": "2025-10-18 22:11:00",
+    "icon": "\ud83d\ude9c",
+    "is_active": true
+  },
+  "N2B": {
+    "callsign": "N2B",
+    "total_qsos": 328,
+    "counties": [
+      "CLI",
+      "ESS",
+      "FRA",
+      "HAM"
+    ],
+    "first_qso": "2025-10-18 14:25:00",
+    "last_qso": "2025-10-19 01:44:00",
+    "icon": "\ud83d\ude9b",
+    "is_active": true
+  },
+  "N2CU": {
+    "callsign": "N2CU",
+    "total_qsos": 1272,
+    "counties": [
+      "ALL",
+      "CAT",
+      "CHA",
+      "ERI",
+      "GEN",
+      "LIV",
+      "MON",
+      "NIA",
+      "ORL",
+      "WYO"
+    ],
+    "first_qso": "2025-10-18 14:00:00",
+    "last_qso": "2025-10-19 01:58:00",
+    "icon": "\ud83d\ude97",
+    "is_active": true
+  },
+  "N2T": {
+    "callsign": "N2T",
+    "total_qsos": 1028,
+    "counties": [
+      "CAY",
+      "CHE",
+      "DEL",
+      "FUL",
+      "HER",
+      "MAD",
+      "ONE",
+      "ONO",
+      "OSW",
+      "OTS",
+      "SCO",
+      "SEN",
+      "TIO",
+      "TOM",
+      "YAT"
+    ],
+    "first_qso": "2025-10-18 14:13:00",
+    "last_qso": "2025-10-19 01:32:00",
+    "icon": "\ud83d\ude90",
+    "is_active": true
+  },
+  "W1WV": {
+    "callsign": "W1WV",
+    "total_qsos": 153,
+    "counties": [
+      "DEL",
+      "GRE",
+      "SCH",
+      "SCO",
+      "SUL",
+      "ULS"
+    ],
+    "first_qso": "2025-10-18 14:54:00",
+    "last_qso": "2025-10-19 01:28:00",
+    "icon": "\ud83d\ude9a",
+    "is_active": true
+  }
+}

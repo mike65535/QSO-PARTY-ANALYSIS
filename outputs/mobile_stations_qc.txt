@@ -1,0 +1,37 @@
+NY MOBILE STATION DETECTION QC REPORT
+==================================================
+Detection criteria:
+  1. Declared as MOBILE in contest metadata
+  2. Operated from NY counties (minimum 2 counties)
+  3. Minimum QSOs: 10
+  NY counties considered: 55
+
+NY mobile stations detected: 10
+
+--------------------------------------------------------------------------------
+Callsign   QSOs   Counties County List                    Icon
+--------------------------------------------------------------------------------
+AB1BL      37     2    SEN,TOM                        🚌   
+K2A        1242   19   CHE,COL,COR,DEL,DUT... (+14)   🚙   
+K2Q        860    10   ALL,CAT,ERI,GEN,LIV... (+5)    🚓   
+K2V        652    10   CAY,JEF,LEW,MAD,ONE... (+5)    🚕   
+KQ2R       76     4    COL,DUT,PUT,WES                🏎️  
+KV2X       269    7    CAY,MAD,MON,ONE,ONO... (+2)    🚜   
+N2B        328    4    CLI,ESS,FRA,HAM                🚛   
+N2CU       1272   10   ALL,CAT,CHA,ERI,GEN... (+5)    🚗   
+N2T        1028   15   CAY,CHE,DEL,FUL,HER... (+10)   🚐   
+W1WV       153    6    DEL,GRE,SCH,SCO,SUL... (+1)    🚚   
+--------------------------------------------------------------------------------
+
+ACTIVITY TIMELINE:
+
+AB1BL: 2025-10-18 17:38:00 to 2025-10-18 21:04:00
+K2A: 2025-10-18 14:11:00 to 2025-10-19 01:39:00
+K2Q: 2025-10-18 14:02:00 to 2025-10-19 01:59:00
+K2V: 2025-10-18 14:01:00 to 2025-10-19 01:53:00
+KQ2R: 2025-10-18 14:27:00 to 2025-10-18 22:34:00
+KV2X: 2025-10-18 14:53:00 to 2025-10-18 22:11:00
+N2B: 2025-10-18 14:25:00 to 2025-10-19 01:44:00
+N2CU: 2025-10-18 14:00:00 to 2025-10-19 01:58:00
+N2T: 2025-10-18 14:13:00 to 2025-10-19 01:32:00
+W1WV: 2025-10-18 14:54:00 to 2025-10-19 01:28:00

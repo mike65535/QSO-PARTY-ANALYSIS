@@ -1,0 +1,51 @@
+COUNTY LINE PERIODS QC REPORT
+==================================================
+Detection parameters:
+  Minimum alternations: 3
+  Max consecutive same: 2
+
+Stations with county-line periods: 11
+Total periods detected: 24
+
+----------------------------------------------------------------------------------------------------
+Station  Period Start Time       End Time         Counties QSOs  Alt  Duration
+----------------------------------------------------------------------------------------------------
+AB1BL    1   10-18 17:38      10-18 20:33      SCU/TOM  54    38      175m
+AB1BL    2   10-18 20:43      10-18 21:04      SEN/TOM  10    9        21m
+K2G      1   10-18 14:12      10-18 17:41      DEL/GRE  178   154     209m
+K2Q      1   10-18 14:02      10-18 14:58      NIA/ORL  156   155      56m
+K2Q      2   10-18 15:55      10-18 17:31      GEN/MON  175   174      96m
+K2Q      3   10-18 18:24      10-18 19:11      LIV/ONT  166   164      47m
+K2Q      4   10-18 20:05      10-18 21:12      STE/YAT  188   185      67m
+K2Q      5   10-18 22:54      10-19 00:31      ALL/CAT  250   248      97m
+K2Q      6   10-19 01:13      10-19 01:59      ERI/WYO  88    88       46m
+KQ2R     1   10-18 14:27      10-18 16:29      BRX/WES  38    34      122m
+KV2X     1   10-18 21:58      10-18 22:11      MON/WAY  32    24       13m
+N2CU     1   10-18 14:00      10-18 14:59      CAT/CHA  200   198      59m
+N2CU     2   10-18 15:57      10-18 17:10      ERI/WYO  278   276      73m
+N2CU     3   10-18 18:06      10-18 19:35      ALL/LIV  336   336      89m
+N2CU     4   10-18 20:33      10-18 21:50      ONT/STE  324   324      77m
+N2CU     5   10-18 23:00      10-19 00:07      GEN/MON  296   294      67m
+N2CU     6   10-19 01:08      10-19 01:58      NIA/ORL  162   162      50m
+N2JJ     1   10-18 14:02      10-18 16:13      MTG/SCH  110   100     131m
+N2JJ     2   10-18 17:38      10-18 21:18      FUL/HAM  128   124     220m
+N2Y      1   10-18 14:02      10-18 20:41      ORA/ROC  1428  1414    399m
+N2Y      2   10-18 21:08      10-19 01:59      PUT/WES  1234  1230    291m
+W1WV     1   10-18 19:03      10-18 20:21      GRE/ULS  26    24       78m
+W2IG     1   10-18 14:18      10-18 20:32      PUT/WES  626   626     374m
+W9TCV    1   10-18 21:38      10-19 01:22      ORA/ROC  100   100     224m
+----------------------------------------------------------------------------------------------------
+
+SUMMARY BY STATION:
+
+AB1BL: 2 periods, 64 QSOs, 196 minutes
+K2G: 1 periods, 178 QSOs, 209 minutes
+K2Q: 6 periods, 1023 QSOs, 409 minutes
+KQ2R: 1 periods, 38 QSOs, 122 minutes
+KV2X: 1 periods, 32 QSOs, 13 minutes
+N2CU: 6 periods, 1596 QSOs, 415 minutes
+N2JJ: 2 periods, 238 QSOs, 351 minutes
+N2Y: 2 periods, 2662 QSOs, 690 minutes
+W1WV: 1 periods, 26 QSOs, 78 minutes
+W2IG: 1 periods, 626 QSOs, 374 minutes
+W9TCV: 1 periods, 100 QSOs, 224 minutes

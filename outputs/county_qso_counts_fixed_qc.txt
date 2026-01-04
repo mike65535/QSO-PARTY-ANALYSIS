@@ -1,0 +1,36 @@
+FIXED STATION COUNTY QSO COUNTS QC REPORT
+==================================================
+Counties with QSOs: 101
+Total QSOs: 67937
+
+TOP 20 COUNTIES BY QSO COUNT:
+------------------------------
+County   QSOs    
+------------------------------
+ERI      5530    
+ONO      4641    
+MON      3354    
+NIA      2995    
+RIC      2800    
+SUF      2449    
+MN       2095    
+ULS      1661    
+IL       1518    
+NAS      1494    
+PA       1396    
+ON       1395    
+ALB      1314    
+STE      1310    
+ORA      1266    
+SAR      1205    
+VA       1196    
+FL       1160    
+NJ       1082    
+OSW      1080    
+... and 81 more counties
+
+STATISTICS:
+  Max QSOs: 5530
+  Min QSOs: 2
+  Average: 672.6
+  Median: 392

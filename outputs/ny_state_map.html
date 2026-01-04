@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NY State Counties Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        #map { height: 100vh; width: 100%; }
+        .county-label { 
+            background: rgba(255, 255, 255, 0.8); 
+            border: 1px solid #ccc; 
+            border-radius: 3px; 
+            padding: 2px 4px; 
+            font-size: 10px; 
+            font-weight: bold; 
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    
+    <script>
+        // Initialize map centered on NY
+        const map = L.map('map').setView([43.0, -76.0], 7);
+        
+        // Add base tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+        
+        // Load and display NY county boundaries
+        fetch('../data/ny-counties-boundaries.json')
+            .then(response => response.json())
+            .then(data => {
+                L.geoJSON(data, {
+                    style: {
+                        color: '#2c3e50',
+                        weight: 2,
+                        opacity: 1,
+                        fillColor: '#ecf0f1',
+                        fillOpacity: 0.3
+                    },
+                    onEachFeature: function(feature, layer) {
+                        const countyName = feature.properties.NAME;
+                        
+                        // Add popup with county info
+                        layer.bindPopup(`<b>${countyName}</b>`);
+                        
+                        // Add hover effects
+                        layer.on('mouseover', function() {
+                            this.setStyle({
+                                fillColor: '#3498db',
+                                fillOpacity: 0.6
+                            });
+                        });
+                        
+                        layer.on('mouseout', function() {
+                            this.setStyle({
+                                fillColor: '#ecf0f1',
+                                fillOpacity: 0.3
+                            });
+                        });
+                    }
+                }).addTo(map);
+                
+                console.log('NY county boundaries loaded successfully');
+            })
+            .catch(error => {
+                console.error('Error loading county boundaries:', error);
+                alert('Could not load county boundaries. Check that ../data/ny-counties-boundaries.json exists.');
+            });
+    </script>
+</body>
+</html>

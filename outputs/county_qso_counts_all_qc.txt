@@ -1,0 +1,36 @@
+ALL COUNTY QSO COUNTS QC REPORT
+==================================================
+Counties with QSOs: 111
+Total QSOs: 79564
+
+TOP 20 COUNTIES BY QSO COUNT:
+------------------------------
+County   QSOs    
+------------------------------
+ERI      5779    
+ONO      4910    
+MON      3605    
+NIA      3154    
+RIC      2800    
+SUF      2449    
+MN       2095    
+ORA      2084    
+ULS      1866    
+STE      1673    
+IL       1518    
+NAS      1494    
+WES      1406    
+PA       1396    
+ON       1395    
+ALB      1368    
+SAR      1307    
+YAT      1290    
+VA       1196    
+FL       1160    
+... and 91 more counties
+
+STATISTICS:
+  Max QSOs: 5779
+  Min QSOs: 2
+  Average: 716.8
+  Median: 392

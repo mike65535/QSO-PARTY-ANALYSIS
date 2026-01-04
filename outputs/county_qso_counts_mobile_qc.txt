@@ -1,0 +1,36 @@
+MOBILE STATION COUNTY QSO COUNTS QC REPORT
+==================================================
+Counties with QSOs: 55
+Total QSOs: 11627
+
+TOP 20 COUNTIES BY QSO COUNT:
+------------------------------
+County   QSOs    
+------------------------------
+PUT      966     
+WES      949     
+ORA      818     
+ROC      764     
+STE      363     
+ONT      350     
+GRE      294     
+ALL      293     
+ONO      269     
+YAT      257     
+MON      251     
+LIV      251     
+ERI      249     
+GEN      236     
+ONE      231     
+CAT      225     
+DEL      221     
+MAD      216     
+COL      207     
+ULS      205     
+... and 35 more counties
+
+STATISTICS:
+  Max QSOs: 966
+  Min QSOs: 16
+  Average: 211.4
+  Median: 158

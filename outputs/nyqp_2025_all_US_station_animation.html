@@ -24,6 +24,7 @@
         .control-btn:disabled { background: #7f8c8d; cursor: not-allowed; }
         
         .legend { position: absolute; top: 20px; right: 20px; z-index: 1000; background: rgba(255,255,255,0.9); padding: 15px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.3); min-width: 150px; }
+        .legend-title { font-size: 14px; font-weight: bold; text-align: center; margin-bottom: 10px; }
         .legend-item { display: flex; align-items: center; margin: 3px 0; }
         .legend-color { width: 20px; height: 15px; margin-right: 8px; border: 1px solid #ccc; }
         button { margin: 0 3px; padding: 8px 12px; border: none; border-radius: 4px; background: #007cba; color: white; cursor: pointer; }
@@ -141,7 +142,7 @@
             const thresholds = [0, 0.05, 0.15, 0.35, 0.65].map(t => maxCount * t);
             const colors = ['#f0f0f0', '#d4c5a9', '#f4e4a6', '#f7b32b', '#d73027', '#a50f15'];
             
-            let legendHtml = '<h4 style="margin: 0 0 10px 0; font-size: 14px;">QSOs per State</h4>';
+            let legendHtml = '<div class="legend-title">QSOs per State</div>';
             for (let i = 0; i < colors.length; i++) {
                 const min = i === 0 ? 0 : Math.round(thresholds[i - 1]) + 1;
                 const max = i < thresholds.length ? Math.round(thresholds[i]) : Math.round(maxCount);
